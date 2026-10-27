@@ -5,6 +5,84 @@
 @media(max-width:390px){.testimonial-grid{grid-template-columns:1fr}.services-grid{grid-template-columns:1fr}.service-card{min-height:210px}.hero-actions{align-items:stretch;flex-direction:column}.hero-actions .button{width:100%}.benefit-grid{grid-template-columns:1fr}.topbar-inner{font-size:9px}.footer-main{grid-template-columns:1fr}.footer-brand{grid-column:auto}}
 
 /* Bold motion system — restrained enough for a professional services brand */
+
+/* Contact details, enquiry form and Google Maps */
+
+
+/* Contact section: exactly two columns */
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 36px;
+  align-items: start;
+  margin-top: 36px;
+}
+
+.contact-left {
+  min-width: 0;
+}
+
+.contact-left .contact-detail {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 24px;
+}
+
+.contact-left .contact-detail p {
+  margin: 8px 0 0;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+.contact-left .contact-detail a {
+  display: inline-block;
+  margin-top: 8px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.contact-map {
+  width: 100%;
+  height: 320px;
+  margin-top: 28px;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #e8eee9;
+  box-shadow: 0 12px 35px rgba(25, 42, 31, 0.08);
+}
+
+.contact-map iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.contact-directions {
+  display: inline-block;
+  margin-top: 16px;
+}
+
+.contact-layout .contact-form {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+/* Stack the two columns on smaller screens */
+@media (max-width: 768px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .contact-map {
+    height: 300px;
+  }
+}
+
+
 .site-header{transition:box-shadow .28s ease,background-color .28s ease,border-color .28s ease}
 .site-header.is-scrolled{background:rgba(255,255,255,.98);box-shadow:0 12px 35px rgba(7,43,23,.11);border-bottom-color:rgba(8,115,63,.16)}
 .site-header.is-scrolled .nav-wrap{height:76px}
