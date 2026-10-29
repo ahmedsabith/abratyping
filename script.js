@@ -87,6 +87,6 @@ if (form) {
     ].filter(Boolean).join('\n');
     const status = document.getElementById('form-status');
     if (status) status.textContent = 'Opening WhatsApp with your enquiry. Please review and send the message there.';
-    window.open(`https://wa.me/971545104716?text=${encodeURIComponent(text)}`, '_blank', 'noopener,noreferrer');
+    window.open(`https://wa.me/971523565686?text=${encodeURIComponent(text)}`, '_blank', 'noopener,noreferrer');
   });
 }
